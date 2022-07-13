@@ -1,0 +1,10 @@
+location:
+  address: 359 Balcombe Rd, Beaumaris VIC 3193
+  google_maps: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50318.69974312427!2d144.97501705820315!3d-37.979025799999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad66f083e888319%3A0x50606cadc538f76e!2sSaska%20Cafe!5e0!3m2!1sen!2sau!4v1657693599823!5m2!1sen!2sau
+  locale: en-AU
+
+socials:
+  - platform: Facebook
+    link: https://www.facebook.com/saskacafe
+  - platform: phone
+    link: tel:0395890377

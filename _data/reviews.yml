@@ -1,15 +1,15 @@
-- title: Great Café
-  username: John Doe
-  message: Loved the coffee and the views. I'll be coming back!
-  link: https://example.com/1
+- title: Great Coffee
+  username: Maria Baker
+  message: Great coffee and one of the best breakfasts I have ever had! There are many dishes on the menu I would love to try - we will be back!
+  link: https://www.zoma.to/aAwrLNy
   stars: 5
-- title: Brilliant!
-  username: Jane Doe
-  message: Staff were exceptional and the breakfast was lovely.
-  link: https://example.com/2
+- title: Beautiful
+  username: DamoForce Food
+  message: The outdoor dining space is really beautiful along with the indoor space as well. The coffee is of great quality along with the tacos & acai bowl.
+  link: https://www.zoma.to/LmLBexv
   stars: 5
-- title: Friendly staff
-  username: Smith Doe
-  message: I have never seen a better looking café, and the staff were so friendly. I'm so glad I live nearby.
-  link: https://example.com/3
+- title: Great Menu
+  username: Robin Banks
+  message: Really nice breakfast menu, nice atmosphere with enough variety to keep everyone happy! Really impressed with the menu
+  link: https://www.zoma.to/NqOpyyB
   stars: 5

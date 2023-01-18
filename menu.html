@@ -2,78 +2,150 @@
 title: Menu
 layout: menu
 
-images: true
+images: false
 
 sections:
-  - title: breakfast
-    time: Until 11:00 AM
+  - title: Breakfast
+    time: 7:00 AM - 2:30 PM
     headings:
       - name:
         foods:
-          - name: Eggs and Bacon
-            price: 15
-            description: Eggs with crispy bacon rashers.
-            gluten_free: true
+          - name: Toast (2)
+            price: 7
+            description: Multigrain, Sourdough, Turkish, Rye, Bagel, Fruit, Thick White. Your Choice of Jam, Vegemite, Peanut Butter, Nutella, Marmalade, Cream Cheese or Honey
             options:
-            - name: Maple syrup
-              price: 2
-            - name: Apple slices
-              price: 3
-          - name: Omlette
+              - name: Gluten free
+                price: 1
+            diets:
+              - gfo
+          - name: Eggs on Toast (2)
+            price: 12.5
+            description:
+            diets:
+              - v
+            options:
+              - name: Poached, Fried, Scrambled
+                price: 1
+          - name: Spinach & Chive Omelette
+            price: 19
+            description: Spinach, Cheese, Leek & Chives With Sourdough
+            diets:
+              - v
+              - gf
+          - name: Smashed Avo
+            price: 19
+            description: Poached Egg, Danish Feta, Fennel, Beetroot Ricotta, Radish, Edamame, Pomegranate, Dukkah, Super Seeds, Multigrain
+            diets:
+              - v
+          - name: Big Brekky
+            price: 24
+            description: Eggs Your Way, Sourdough Toast, Bacon, Hash Browns (2), Roast Tomato, Mushrooms, Breakfast Sausage, Tomato Relish
+            diets:
+              - vo
+              - gfo
+          - name: Eggs Benny
+            price: 22
+            description: Spinach, Hash Browns, BBQ Beef Brisket, Poached Eggs, Crispy Shallots & Sriracha Hollandaise
+          - name: Creamy Oat Porridge
+            price: 18.5
+            description: Caramelised Brown Sugar, Oat Milk, Blueberry Compote, Fig & Hazelnuts
+            diets:
+              - vg
+              - gf
+          - name: Saska's Sweet Waffles
             price: 20
-            description: With tomato, capsicum, and ham.
-            gluten_free: true
-          - name: Pancakes
-            price: 18
-            description: Fluffy and full pancake stack with choice of toppings.
-            options:
-            - name: Maple syrup
-              price: 2
-            - name: Lemon and sugar
-              price: 1
-            - name: Nutella
-              price: 1
-            - name: Honey
-              price: 2
-            - name: Smashed Avocado
-              price: 20
-              description: Fresh avocado on toast, with optional spinach.
-              vegan: true
-            - name: Vegan Breakfast
-              price: 20
-              description: Bran with strawberry pieces and nut milk.
-              vegan: true
+            description: Nutella, Ice Cream, Shaved Chocolate, Berry Coulis, Whipped Cream, Persian Floss & Berries
+            diets:
+              - v
+          - name: Super Food Brekky
+            price: 21
+            description: Nutella, Ice Cream, Shaved Chocolate, Berry Coulis, Whipped Cream, Persian Floss & Berries
+            diets:
+              - v
+              - gfo
+          - name: Brekky Board
+            price: 23
+            description: Granola, Yoghurt, Smashed Avo, Sourdough, Halloumi Poached Egg, Beetroot Ricotta, Bacon, Hash Brown, OJ
+            diets:
+              - vo
       - name: Extras
         foods:
           - name: Potato gems
             price: 5
           - name: Smoked salmon
             price: 6
-  - title: lunch
-    time: After 11:00 AM
+  - title: Sides
     headings:
       - name:
         foods:
-          - name: Burger
-            price: 25
-            description: Beef and bacon burger, with cheese, lettuce, and and a side of chips.
-          - name: Baked Potato
+          - name: Hollandaise, Tomato Relish, Chipotle, Aioli
+            price: 2
+            description:
+          - name: Mushrooms, Spinach, Avo, Roast Tomato, Hash Browns (2), Danish Feta, Halloumi
+            price: 4
+          - name: Bacon (2), Eggs (2), Smoked Salmon, Sausage
+            price: 6
+  - title: Little Ones
+    headings:
+      - name: Breakfast (7:00 AM - 2:30 PM)
+        foods:
+          - name: Egg on Toast
+            price: 9
+            description: Poached, Fried or Scrambled
+            diets:
+              - v
+            options:
+              - name: Bacon
+                price: 3
+              - name: Hash Brown
+                price: 2
+          - name: Sweet Waffle
+            price: 12
+            description: Nutella, Ice Cream & Berries
+            diets:
+              - v
+          - name: Avo on Toast
+            price: 8
+            description: Smashed Avo on Toast
+            diets:
+              - gfo
+          - name: Kids Brekky Bowl
+            price: 14.50
+            description: Scrambled Eggs, Bacon, Avocado, White Toast & Hash Brown
+      - name: Lunch (11:00 AM - 3:00 PM)
+        foods:
+          - name: Kids Sushi Bowl
             price: 15
-            description: Buttered, golden-brown potatos with carrot, brocolli, and tomato.
-            gluten_free: true
-            vegan: true
+            description: Brown Rice, Avocado, Nori, Aioli & Miso Glazed Salmon
+          - name: Ham & Cheese Triangles
+            price: 7
+            description: In Toasted White Bread
+            diets:
+              - gfo
+          - name: Chicken Nuggets
+            price: 12
+            description: With Chips
+            diets:
+              - df
+          - name: Beef Burger
+            price: 15
+            description: Cheese, Tomato Sauce & Chips
+            diets:
+              - dfo
+  - title: lunch
+    time: 11:00 AM - 3:00 PM
+    headings:
+      - name:
+        foods:
+          - name: Todo
+            price: 42
+            description: Todo
   - title: drinks
     time: Any time
     headings:
       - name:
         foods:
-          - name: Coca-Cola
-            price: 4
-            description:
-          - name: Cappuccino
-            price: 3
-            description:
-          - name: Latte
-            price: 5
-            description:
+          - name: Todo
+            price: 42
+            description: Todo
 ---

@@ -19,7 +19,7 @@ sections:
             diets:
               - gfo
           - name: Eggs on Toast (2)
-            price: 12.5
+            price: 12.50
             description:
             diets:
               - v
@@ -68,13 +68,8 @@ sections:
             description: Granola, Yoghurt, Smashed Avo, Sourdough, Halloumi Poached Egg, Beetroot Ricotta, Bacon, Hash Brown, OJ
             diets:
               - vo
-      - name: Extras
-        foods:
-          - name: Potato gems
-            price: 5
-          - name: Smoked salmon
-            price: 6
   - title: Sides
+    time: Any time
     headings:
       - name:
         foods:
@@ -86,6 +81,7 @@ sections:
           - name: Bacon (2), Eggs (2), Smoked Salmon, Sausage
             price: 6
   - title: Little Ones
+    time: 7:00 AM - 3:00 PM
     headings:
       - name: Breakfast (7:00 AM - 2:30 PM)
         foods:
@@ -132,20 +128,268 @@ sections:
             description: Cheese, Tomato Sauce & Chips
             diets:
               - dfo
-  - title: lunch
+  - title: Lunch
     time: 11:00 AM - 3:00 PM
     headings:
       - name:
         foods:
-          - name: Todo
-            price: 42
-            description: Todo
-  - title: drinks
+          - name: BLT
+            price: 17
+            description: Bacon, Gem Lettuce, Tomato & Aioli on Turkish with Chips
+            options:
+              - name: Chicken
+                price: 6
+              - name: Avocado
+                price: 4
+          - name: Steak Sandwich
+            price: 20
+            description: New York Steak, Fried Onions, Horseradish Cream, Whole Grain Mustard, Cheese & Watercress on a Crusty Baguette & Chips
+          - name: Sushi Bowl
+            price: 24
+            description: Pan Fried Miso Salmon, Brown Rice, Thinly Sliced Nori, Edamame, Avocado, Sesame, Chipotle & Pickled Ginger
+            diets:
+              - gfo
+              - dfo
+          - name: Bruschetta
+            price: 16
+            description: Tomatoes, Buffalo Mozzarella, Fresh Basil, Balsamic Glaze, Red Onion on Grilled Turkish Bread
+            diets:
+              - gfo
+          - name: Lemon Pepper Calamari Salad
+            price: 23
+            description: Served With Onion, Spices, Tomatoes, Capers & Lemon, Arugula & Tartare / Grilled Option Available
+            diets:
+              - gfo
+              - p
+              - dfo
+          - name: Falafel Salad
+            price: 23
+            description: Roasted Capsicum, Red Onion, Cherry Tomatoes, Feta, Couscous, Arugula, Hummus, Beetroot Relish, Roast Pumpkin, Dukkah Crusted Avocado & Garlic Dressing
+            diets:
+              - v
+              - dfo
+              - gf
+          - name: Cauliflower Salad
+            price: 22
+            description: Crispy Cauliflower Croquettes, Chickpeas, Kale, Red Onion, Quinoa, Roast Pumpkin, Pomegranate, Wild Rice, Danish Feta, Cranberries, Balsamic Dressing & Tzatziki
+            diets:
+              - v
+          - name: Fish Tacos
+            price: 21
+            description: Beer Battered Flathead, Gem Lettuce, Corn Salsa, Pickled Onion & Aioli
+            diets:
+              - p
+              - gfo
+          - name: Beef Burger
+            price: 21
+            description: Beef Patty, Cheese, Burger Sauce, Lettuce, Tomato, Mustard, Dill PIckles with Onion Rings & Chips
+            diets:
+              - dfo
+            options:
+              - name: Extra patty
+                price: 4
+      - name: Chips
+        foods:
+          - name: Full serve
+            price: 10
+            description: Beer Battered Chips, Sweet Potato Fries or Onion Rings
+          - name: Half serve
+            price: 5
+            description: Beer Battered Chips, Sweet Potato Fries or Onion Rings
+  - title: Drinks
     time: Any time
     headings:
       - name:
         foods:
-          - name: Todo
-            price: 42
-            description: Todo
+          - name: Coffee/Hot Chocolate
+            price:
+            description:
+            options:
+              - name: Cup
+                price: 5
+              - name: Mug
+                price: 5
+          - name: Tea
+            price: 4.50
+            description: English Breakfast, Green, Earl Grey, Chamomile, Peppermint, Lemongrass & Ginger, Chai
+            diets:
+              - vgo
+            options:
+              - name: Sticky Loose-leaf Chai w/ Soy Milk
+                price: 1.45
+              - name: Matcha
+                price: 1.45
+              - name: Turmeric
+                price: 1.45
+              - name: Syrups
+                price: 0.50
+              - name: Milk
+                price: 0.50
+          - name: Iced Coffee, Mocha, Chocolate, Chai
+            price: 7
+            description:
+            diets:
+              - vgo
+          - name: Milkshakes
+            price: 4.50
+            description: Chocolate, Strawberry, Blue heaven, Lime, Caramel, Vanilla, Banana, Coffee
+            options:
+              - name: Large
+                price: 2.50
+              - name: Malt
+                price: 0.5
+          - name: Fizz
+            price: 5
+            description: Coke, Diet Coke, Coke Zero, Sprite, Fanta, Dry Ginger, Lemon Lime Bitters, Raspberry, Soda, Tonic
+            options:
+              - name: Kombucha - Passionfruit or Lemon and Ginger
+                price: 1
+              - name: Spiders – your choice of Fizz
+                price: 2
+          - name: Pressed Juice
+            price: 5
+            description: "Your choice of: Orange, Apple, Pineapple, Watermelon, Carrot, Celery, Ginger, Mint, Spinach, Kale"
+            options:
+              - name: Large
+                price: 3
+          - name: Smoothies
+            price: 5
+            description: Banana Bender – Banana, Honey, Ice Cream, Milk Mango Delight – Mango, Mango Nectar, Frozen Yoghurt Mixed Berry – Berries, Frozen Yoghurt, Apple Juice Tropical – Mango, Strawberries, Mango Nectar, Frozen Yoghurt Clean & Green - Spinach, Matcha, Mango, Pineapple
+            options:
+              - name: Large
+                price: 3
+              - name: Protein
+                price: 0.5
+              - name: Powder, Chia Seeds, Coconut Water
+                price: 4
+  - title: 5 O’Clock Somewhere
+    time: 3:00 PM - 6:00 PM
+    headings:
+      - name:
+        foods:
+          - name: Alcoholic Spritz
+            price: 10
+            description: Aperol, Grapefruit & Guava
+      - name: Cocktails
+        foods:
+          - name: Espresso Martini
+            price: 16
+          - name: Lychee Martini
+            price: 15
+          - name: Long Island
+            price: 15
+            options:
+              - name: Large
+                price: 35
+          - name: Cosmopolitan
+            price: 15
+          - name: Pina Colada
+            price: 15
+          - name: Watermelon Margarita
+            price: 15
+          - name: Wade’s Toblerone
+            price: 15
+          - name: Passionfruit Caiprioska
+            price: 15
+            options:
+              - name: Large
+                price: 35
+          - name: Coconut & Mango Daquiri
+            price: 15
+          - name: Mojito
+            price: 15
+            options:
+              - name: Large
+                price: 30
+          - name: Mimosa
+            price: 10
+      - name: Sparkling
+        foods:
+          - name: Astoria Butterfly (Prosecco)
+            price: 11
+            options:
+              - name: Large
+                price: 46
+          - name: Innocent Bystander (Prosecco)
+            price: 9
+            options:
+              - name: Large
+                price: 38
+      - name: White
+        foods:
+          - name: Skuttlebutt Margaret River (Sauvignon Blanc)
+            price: 9
+            options:
+              - name: Large
+                price: 38
+          - name: Woodvale Clare Valley (Pinot Gris)
+            price: 11
+            options:
+              - name: Large
+                price: 46
+          - name: Brown Brothers Moscato 275ml (Moscato)
+            price: 10
+          - name: Brown Brothers 1889 (Pinot Grigio)
+            price: 7
+            options:
+              - name: Large
+                price: 30
+          - name: Devils Corner (Chardonnay)
+            price: 9
+            options:
+              - name: Large
+                price: 34
+      - name: Red
+        foods:
+          - name: Lloyd Brothers McLaren Vale (Shiraz)
+            price: 9
+            options:
+              - name: Large
+                price: 38
+          - name: Tait Ball Buster Barossa Valley (Shiraz)
+            price: 12
+            options:
+              - name: Large
+                price: 50
+          - name: Devils Corner (Pinot Noir)
+            price: 9
+            options:
+              - name: Large
+                price: 38
+          - name: Innocent Bystander (Rose)
+            price: 9
+            options:
+              - name: Large
+                price: 38
+      - name: Beer
+        foods:
+          - name: Carlton Draught
+            price:
+            options:
+              - name: Pot
+                price: 5
+              - name: Schooner
+                price: 7
+              - name: Jug
+                price: 20
+          - name: Crown Lager
+            price: 7
+          - name: James Boags Light
+            price: 6
+          - name: Peroni
+            price: 8
+          - name: Asahi
+            price: 8
+          - name: Corona
+            price: 8
+          - name: Little Creatures Pale Ale
+            price: 8
+          - name: 5 Seeds Apple Cider
+            price: 8
+          - name: Canadian Club Dry
+            price: 9
+          - name: Basic Spirits
+            price: 8
+          - name: Seltzer
+            price: 7
 ---

@@ -23,58 +23,52 @@ sections:
             diets:
               - v
             description: Poached, fried or scrambled (+ $1) eggs on toasted sourdough
-          - name: The Classic Benny
-            price: 22
+          - name: Chilli Scrambles
+            price: 19
             description: Bacon, hash browns, poached eggs and hollandaise served on sourdough
-          - name: Nourish Bowl
+            options:
+              - name: Chili Eggs
+                description: Chilli scrambled eggs, feta, spring onion, parsley and sriracha on sourdough toast
+                diets:
+                  - v
+              - name: Chili Tofu
+                description: Marinated tofu scramble, capsicum, kale, spring onion and chill on rye toast
+                diets:
+                  - vg
+          - name: Omelette
             price: 22
-            description: Broccoli, curried quinoa, chickpeas, avocado, spinach, tandoori paste, marinated tofu and green dressing
+            description: Omelette eggs with spinach, mushroom, feta, cucumber, radish, avocado and sourdough toast served with mixed herbs
             diets:
-              - vg
-              - gf
+              - v
+          - name: Turkish Eggs
+            price: 24
+            description: Fried eggs cooked in chilli butter w/ grilled tomato, labneh on toasted flatbread with your choice of chorizo or halloumi
+            diets:
+              - vo
+          - name: Eggs Benny
+            price: 24
+            description: Pulled beef, poached eggs, hash browns, pea tendrils and hollandaise sauce on toasted Turkish bread
+          - name: Housemade Waffles
+            price: 22
+            description: Vanilla ice-cream, raspberry coulis and fresh berries served with a rasperry macaron and 24 Canadian maple
+            diets:
+              - v
           - name: Smashed Avo
             price: 24
             description: Smashed avocado on multigrain, dressed with beetroot ricotta, radish, pomegranate, edamame, feta, dukkah, fried kale, pan fried cherry tomatoes, poached egg and mixed seeds
-            diets:
-            diets:
-              - v
-              - gfo
-          - name: Smashed Avo
-            price: 19
-            description: Poached Egg, Danish Feta, Fennel, Beetroot Ricotta, Radish, Edamame, Pomegranate, Dukkah, Super Seeds, Multigrain
             diets:
               - v
             options:
               - name: Add halloumi
                 price: 4
-          - name: Halloumi Fritters
-            price: 24
-            description: Housemade halloumi and zucchini fritters served with smashed toasted bagel with chips pumpkin, green hommus, capsicum relish, pickled cabbage, pomegranate and roquette salad with poached eggs.
-            diets:
-              - v
-          - name: Muesli Cup
-            price: 16
-            description: Overnight soaked oats with coconut yoghurt, slivered almonds, raisins and seasonal fruits
-            diets:
-              - vg
-              - v
-          - name: Pancakes
-            price: 20
-            description: Double stack buttermilk pancakes with vanilla ice cream, berry compote and Canadian maple
-            diets:
-              - v
           - name: Super Food Brekky
             price: 24
             description: Poached eggs, capsicum feta, sautéed greens, button mushrooms, avocado, pesto and toasted rye
             diets:
               - v
-              - gfo
           - name: Big Brekky
             price: 26
-            description: Traditional - Eggs, bacon, sausage, tomato, mushrooms, avocado, hash brown on sourdough. Vegan (v, vg) - Marinated tofu, tomato, mushrooms, avocado, hash brown, relish, spinach on sourdough
-            diets:
-              - vo
-              - vgo
+            description: Eggs, bacon, sausage, grilled tomato, mushrooms, smashed avo and hash brown on toasted sourdough
   - title: Something Extra
     time: Any time
     headings:
@@ -82,20 +76,17 @@ sections:
         foods:
           - name: Hollandaise, tomato relish, chipotle, mayo, sweet chilli, bbq, aioli
             price: 2.5
-          - name: Mushrooms, avocado, roast tomatoes, Danish feta, Canadian maple
-            price: 4
-          - name: Spinach, hash browns (2), halloumi
+          - name: Mushrooms, avocado, roast tomatoes, Danish feta, Canadian maple, spinach, hash browns (2), halloumi
             price: 5
-          - name: Bacon (2), eggs (2), smoked salmon, sausages (2), grilled chicken
+          - name: Bacon (2), eggs (2), smoked salmon, sausages (2), griled chicken, chorizo
             price: 6
   - title: Little Ones
-    time: 7:00 AM - 3:00 PM
     headings:
       - name: Breakfast (7:00 AM - 2:30 PM)
         foods:
           - name: Egg on Toast
             price: 7
-            description: Poached, fried or scrambled (+ $1) egg
+            description: Poached, fried or scrambled (+ $1) egg on toasted white bread
             diets:
               - v
             options:
@@ -105,20 +96,14 @@ sections:
                 price: 2.5
               - name: Avocado
                 price: 4
-          - name: Kids Pancake
-            price: 12
-            description: Buttermilk pancake with vanilla ice cream, waffle cone, Oreo raisins and seasonal fruits and fresh fruits
-            diets:
-              - v
           - name: Egg and Bacon Sliders (2)
-            price: 15
+            price: 12
             description: Egg, bacon and tomato sauce on mini brioche buns
-          - name: Yoghurt Cup
-            price: 9
-            description: Coconut yogurt with berry compote and toasted granola
+          - name: Housemade Waffle
+            price: 12
+            description: Served with vanilla ice-cream, 100s and thousands, chocolate sauce and fairy floss
             diets:
               - v
-              - vgo
       - name: Lunch (11:00 AM - 3:00 PM)
         foods:
           - name: Ham & Cheese Triangles
@@ -129,7 +114,7 @@ sections:
             description: Served with chips
           - name: Kids Tacos (2)
             price: 15
-            description: Mission flour tortillas with cos lettuce, crispy chicken tenderloin, aioli and avocado
+            description: Flour tortillas with cos lettuce, crispy chicken tenderioin, aioli and avocado
   - title: Lunch
     time: 11:00 AM - 3:00 PM
     headings:
@@ -143,49 +128,53 @@ sections:
                 price: 6
               - name: Avocado
                 price: 4
-          - name: Steak Sandwich
-            price: 23
-            description: Strip lion steak, fried onion, horseradish cream, whole grain mustard, cheese and mix salad on a crusty baguette with chips
           - name: Poke Bowl
             price: 26
-            description: Miso glazed salmon or marinated tofu with pickled cabbage, edamame, brown rice, carrots, avocado, radish, sriracha mayo and kimchi
+            description: Miso glazed salmon or halloumi with pickled cabbage, edamame, brown rice, carrots, avocado, radish, sriracha mayo and kimchi
             diets:
               - vgo
-          - name: Calamari
-            price: 27
-            description: Sambal Oelek marinated calamari served with fresh mixed salad, onion, cherry tomatos, capers and lemon dressing with chips (Grilled option available)
-          - name: Halloumi Burger
+              - p
+          - name: Popcorn Chicken Banh Mi
             price: 20
-            description: Grilled halloumi, tomato, avocado, pesto, lettuce, chipotle mayo, fried egg, red onion with chips
-            diets:
-              - v
-          - name: Pulled Pork Bagel
-            price: 20
-            description: Slow cooked pork with sweet chilli jam, aioli, roquette salad on a toasted bagel with chips
-          - name: Prawn and Mango Salad
-            price: 24
-            description: Crunchy cos lettuce, prawns, cherry tomatoes, avocado, mango and a chilli lime dressing
-          - name: Crispy Chicken Tacos (3)
+            description: Crispy popcorn chicken pieces with pickled carrot, cucumber, coriander and chipotle mayo in a crunchy white roll
+          - name: Chicken Burrito
             price: 22
-            description: Mission flour tortilla with cos lettuce, crispy chicken tenderloin aioli, avocado and pickled cabbage
-          - name: Japanese Noodle Salad
-            price: 21
-            description: Wombok, cabbage, carrots, edamame, spring onion, soba noodles, pickled ginger, kewpie mayo and a soy sesame dressing
+            description: Brown rice, avocado, grilled chicken, kidney beans, cheese and chipotle mayo
+          - name: Mushroom & Veggie Stew
+            price: 22
+            description: Slow cooked mushrooms, sweet potato, carrot, potato and kidney beans served with pita and chilli paste
+            diets:
+              - vg
+          - name: Chicken Katsu Curry
+            price: 24
+            description: Brown rice and panko crumbled chicken served with a mild Japanese curry
+          - name: Lamb Ragu Gnocchi
+            price: 26
+            description: Slow cooked lamb and pan fried gnocchi bites with Napoli sauce and topped with Parmesan cheese
+          - name: Tacos (3)
+            price: 22
+            description: Crispy chicken tenderloins in flour tortillas with cos lettuce, aioli, avocado and pickled cabbage
+          - name: Salads
             diets:
               - v
             options:
-              - name: crispy chicken
-                price: 6
-              - name: smoked salmon
-                price: 6
+              - name: Sweet Potato
+                description: Roasted sweet potato, capsicum, grilled corn, avocado, feta, onion and coriander served with house-made tahini dressing
+                price: 20
+              - name: Japanese Noodle
+                description: Wombok, cabbage, carrots, edamame, soba onion, soba noodles, pickied ginger, kewpie mayo and a soy sesame dressing
+                price: 21
+                diets:
+                  - vg
           - name: Chips
-            price: 
             description: Beer battered chips served with aioli or tomato sauce
             options:
               - name: Full serve
                 price: 10
               - name: Half serve
                 price: 5
+            diets:
+              - v
   - title: Drinks
     time: Any time
     headings:
@@ -335,7 +324,7 @@ sections:
             diets:
               - p
           - name: Fried Artichoke
-            description: Served with lime yoghurt, asparagus, cherry tomatos, radish, mint and feta cheese
+            description: Served with lime yoghurt, asparagus, cherry tomatoes, radish, mint and feta cheese
             price: 18
             diets:
               - v
@@ -392,7 +381,7 @@ sections:
             diets:
               - p
           - name: Calamari
-            description: Sambal Oelek marinated calamari served with fresh mixed salad, onion, cherry tomatos, capers and lemon dressing with chips<br><br>(Grilled option available)
+            description: Sambal Oelek marinated calamari served with fresh mixed salad, onion, cherry tomatoes, capers and lemon dressing with chips<br><br>(Grilled option available)
             price: 27
             diets:
               - p

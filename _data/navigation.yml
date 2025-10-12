@@ -2,8 +2,8 @@
   url: /
 - title: Menu
   url: /menu
-#- title: Functions
-#  url: /functions
+- title: Bookings
+  url: /bookings
 - title: Gallery
   url: /gallery
 - title: Contact

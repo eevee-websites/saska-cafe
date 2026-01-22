@@ -1,0 +1,74 @@
+---
+title: What's On
+layout: default
+---
+
+<div id="main">
+  <h1>What's On</h1>
+  <p class="whats-on-text">
+    Our private upstairs dining room is ideal for special occasions or a laid-back bottomless brunch. We offer flexible indoor and outdoor spaces that
+    can be tailored for any event, including birthdays, family celebrations, corporate functions and more. With a wide selection of food - from platters
+    and finger foods to high teas and fine dining - alongside an extensive range of wine, cocktails and coffee, Saska Cafe aims to elevate every
+    occasion.
+  </p>
+
+  <iframe
+    src="/assets/menus/summer-specials.pdf#view=FitH"
+    title="Summer specials"
+    class="menu-frame"
+    loading="lazy"
+    allowfullscreen
+  ></iframe>
+  <p class="menu-download">
+    Trouble loading the PDF? <a href="/assets/menus/summer-specials.pdf" target="_blank" rel="noopener">Download summer specials</a>.
+  </p>
+</div>
+
+<style>
+  #main {
+    margin: 0 auto;
+    max-width: 1100px;
+    padding: 1rem;
+  }
+
+  .whats-on-text {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    margin: 0 0 1.25rem;
+  }
+
+  .menu-frame {
+    width: 100%;
+    height: 100vh;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  }
+
+  .menu-download {
+    margin: 0.75rem 0 0;
+    text-align: right;
+    font-size: 0.95rem;
+  }
+
+  .menu-download a {
+    color: inherit;
+    text-decoration: underline;
+  }
+
+  @media (max-width: 768px) {
+    #main {
+      padding: 0.75rem;
+    }
+
+    .menu-frame {
+      height: 80vh;
+      border-radius: 6px;
+    }
+
+    .menu-download {
+      text-align: center;
+      font-size: 0.9rem;
+    }
+  }
+</style>

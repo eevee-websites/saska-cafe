@@ -2,9 +2,9 @@
   url: /
 - title: Menu
   url: /menu
-- title: Bookings
-  url: /bookings
 - title: Gallery
   url: /gallery
+- title: What's On
+  url: /whats-on
 - title: Contact
   url: /contact

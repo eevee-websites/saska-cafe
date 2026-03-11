@@ -1,0 +1,9 @@
+---
+layout: default
+---
+{% if site.data.production.demo %}
+	<p>This website is not the official website of {{ site.data.brand.name }}, it is a demo. This website will also not show up in search engine results.</p>
+{% endif %}
+{% if content != "" %}
+	{{ content }}
+{% endif %}

@@ -1,13 +1,521 @@
 ---
 title: Home
 layout: home
-banner: coffeePour
-banner_video: true
+banner: plate
+banner_video: false
 ---
-<script type='text/javascript' src='https://www.opentable.com.au/widget/reservation/loader?rid=302399&type=standard&theme=wide&color=8&dark=false&iframe=true&domain=comau&lang=en-AU&newtab=true&ot_source=Restaurant%20website&font=arial&ot_logo=subtle&primary_color=ffffff&primary_font_color=333333&button_color=03AABC&button_font_color=ffffff&logo_pid=85444632&background_pid=85444654&cfe=true'></script>
+<div id="header-overlay">
+	<a id="header-logo" href="{{ '/' | relative_url }}">
+		<img src="{{ '/assets/images/logo.webp' | relative_url }}" alt="{{ site.data.brand.name }} logo">
+		<span>{{ site.data.brand.name }}{% if site.data.production.demo %} - Unofficial{% endif %}</span>
+	</a>
+	<div id="header-booking">
+		<script type='text/javascript' src='https://www.opentable.com.au/widget/reservation/loader?rid=302399&type=standard&theme=wide&color=8&dark=false&iframe=true&domain=comau&lang=en-AU&newtab=true&ot_source=Restaurant%20website&font=arial&ot_logo=subtle&primary_color=ffffff&primary_font_color=333333&button_color=03AABC&button_font_color=ffffff&logo_pid=85444632&background_pid=85444654&cfe=true'></script>
+	</div>
+</div>
+
 <style>
-    #ot-widget-container2 iframe {
-        margin: 0 auto;
-        display: block;
-    }
+	#header-overlay {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 10;
+		text-align: center;
+		width: 90%;
+		max-width: 800px;
+	}
+
+	#header-logo {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 1rem;
+		margin-bottom: 2rem;
+		text-decoration: none;
+		color: inherit;
+	}
+
+	#header-logo img {
+		max-width: 80px;
+		height: auto;
+	}
+
+	#header-logo span {
+		font-size: 2rem;
+		font-weight: bold;
+		color: white;
+		text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+	}
+
+	#ot-widget-container2 iframe {
+		margin: 0 auto;
+		display: block;
+	}
+
+	@media (max-width: 768px) {
+		#header-logo span {
+			font-size: 1.5rem;
+		}
+
+		#header-logo img {
+			max-width: 60px;
+		}
+	}
+</style>
+
+<div id="callouts-section">
+	<div class="callout-container">
+		<div class="callout">
+			<div class="callout-circle">
+				<img src="{{ '/assets/images/callouts/whats-on.jpg' | relative_url }}" alt="What's On">
+			</div>
+			<h3 class="callout-title">What's On</h3>
+			<p class="callout-text">New specials every month, planned and created by our chefs.</p>
+		</div>
+		<div class="callout">
+			<div class="callout-circle">
+				<img src="{{ '/assets/images/callouts/new-look.jpg' | relative_url }}" alt="New Look">
+			</div>
+			<h3 class="callout-title">New Look</h3>
+			<p class="callout-text">An oasis enwrapped around greenery, a quiet space with a fenced-off area</p>
+		</div>
+		<div class="callout">
+			<div class="callout-circle">
+				<img src="{{ '/assets/images/callouts/locally-loved-bear.jpg' | relative_url }}" alt="Locally Loved Bear">
+			</div>
+			<h3 class="callout-title">Locally Loved Bear</h3>
+			<p class="callout-text">Now offering locally loved 2 Brothers Brewery beer on tap.</p>
+		</div>
+	</div>
+</div>
+
+<style>
+	#callouts-section {
+		background-color: #03AABC;
+		padding: 6rem 0;
+		margin: 0 calc(-50vw + 50%);
+		width: 100vw;
+	}
+
+	.callout-container {
+		max-width: 1100px;
+		margin: 0 auto;
+		padding: 0 2rem;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 3rem;
+	}
+
+	.callout {
+		text-align: center;
+		color: white;
+	}
+
+	.callout-circle {
+		width: 360px;
+		height: 360px;
+		border-radius: 50%;
+		overflow: hidden;
+		margin: 0 auto 1.5rem;
+		border: 4px solid white;
+		box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+	}
+
+	.callout-circle img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	.callout-title {
+		font-size: 1.5rem;
+		font-weight: 700;
+		margin: 0 0 1rem;
+		color: white;
+	}
+
+	.callout-text {
+		font-size: 0.95rem;
+		line-height: 1.6;
+		color: rgba(255, 255, 255, 0.95);
+		margin: 0;
+	}
+
+	@media (max-width: 768px) {
+		#callouts-section {
+			padding: 4rem 0;
+		}
+
+		.callout-container {
+			grid-template-columns: 1fr;
+			gap: 2.5rem;
+			padding: 0 1.5rem;
+		}
+
+		.callout-circle {
+			width: 230px;
+			height: 230px;
+		}
+
+		.callout-title {
+			font-size: 1.3rem;
+		}
+	}
+</style>
+
+<div id="exterior-section">
+	<img src="{{ '/assets/images/exterior.webp' | relative_url }}" alt="Saska Cafe Exterior">
+	<div class="exterior-overlay">
+		<p class="exterior-text">A place where urban energy meets the coast, designed for meaningful connection, relaxed comfort, and unforgettable food and coffee experiences.</p>
+	</div>
+</div>
+
+<style>
+	#exterior-section {
+		margin: 0 calc(-50vw + 50%);
+		width: 100vw;
+		overflow: hidden;
+		position: relative;
+	}
+
+	#exterior-section img {
+		width: 100%;
+		height: 1100px;
+		object-fit: cover;
+		display: block;
+	}
+
+	.exterior-overlay {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		background-color: #03AABC;
+		border-radius: 999px;
+		padding: 2rem 3rem;
+		max-width: 800px;
+		width: 90%;
+		box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+	}
+
+	.exterior-text {
+		color: white;
+		font-size: 1.1rem;
+		line-height: 1.6;
+		margin: 0;
+		text-align: center;
+	}
+
+	@media (max-width: 768px) {
+		.exterior-overlay {
+			padding: 1.5rem 2rem;
+		}
+
+		.exterior-text {
+			font-size: 0.95rem;
+		}
+	}
+</style>
+
+<div id="cutting-section">
+	<img src="{{ '/assets/images/cutting.webp' | relative_url }}" alt="Food Preparation">
+	<div class="testimonials-overlay">
+		{% for review in site.data.reviews %}
+			<div class="testimonial">
+				<h3 class="testimonial-title">{{ review.title }}</h3>
+				<p class="testimonial-username">— {{ review.username }}</p>
+				<p class="testimonial-message">{{ review.message }}</p>
+			</div>
+		{% endfor %}
+	</div>
+	<a href="{{ '/menu' | relative_url }}" class="menu-button">View Our Menu</a>
+</div>
+
+<style>
+	#cutting-section {
+		margin: 0 calc(-50vw + 50%);
+		width: 100vw;
+		overflow: hidden;
+		position: relative;
+	}
+
+	#cutting-section img {
+		width: 100%;
+		height: 1100px;
+		object-fit: cover;
+		display: block;
+	}
+
+	.testimonials-overlay {
+		position: absolute;
+		top: 3rem;
+		left: 50%;
+		transform: translateX(-50%);
+		background-color: rgba(3, 170, 188, 0.85);
+		border-radius: 20px;
+		padding: 2.5rem 3rem;
+		max-width: 1100px;
+		width: 90%;
+		box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+		backdrop-filter: blur(10px);
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 2rem;
+	}
+
+	.testimonial {
+		color: white;
+		padding: 0;
+		border-bottom: none;
+	}
+
+	.testimonial-title {
+		font-size: 1.4rem;
+		font-weight: 700;
+		margin: 0 0 0.5rem;
+		color: white;
+	}
+
+	.testimonial-username {
+		font-size: 1rem;
+		font-style: italic;
+		margin: 0 0 1rem;
+		color: rgba(255, 255, 255, 0.9);
+	}
+
+	.testimonial-message {
+		font-size: 1rem;
+		line-height: 1.6;
+		margin: 0;
+		color: white;
+	}
+
+	@media (max-width: 768px) {
+		.testimonials-overlay {
+			padding: 1.5rem 2rem;
+			top: 2rem;
+			grid-template-columns: 1fr;
+			gap: 2rem;
+		}
+
+		.testimonial-title {
+			font-size: 1.2rem;
+		}
+
+		.testimonial-message {
+			font-size: 0.95rem;
+		}
+	}
+
+	.menu-button {
+		position: absolute;
+		bottom: 3rem;
+		left: 50%;
+		transform: translateX(-50%);
+		display: inline-block;
+		background-color: #03AABC;
+		color: white;
+		text-decoration: none;
+		padding: 1rem 2.5rem;
+		border-radius: 999px;
+		font-size: 1.1rem;
+		font-weight: 600;
+		text-align: center;
+		transition: all 0.3s ease;
+		box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+	}
+
+	.menu-button:hover {
+		opacity: 0.9;
+		transform: translateX(-50%) scale(1.05);
+	}
+
+	@media (max-width: 768px) {
+		.menu-button {
+			bottom: 2rem;
+			font-size: 1rem;
+		}
+	}
+</style>
+
+<div id="contact-info-section">
+	<div class="contact-info-container">
+		<div class="contact-info-left">
+			<h2>Visit Us</h2>
+			<div class="contact-detail">
+				<h3>Address</h3>
+				<p>{{ site.data.contact.location.address }}</p>
+			</div>
+			<div class="contact-detail">
+				<h3>Phone</h3>
+				<p><a href="tel:{{ site.data.contact.phone }}">{{ site.data.contact.phone }}</a></p>
+			</div>
+			<div class="contact-detail">
+				<h3>Opening Hours</h3>
+				{% for hours in site.data.openingTimes %}
+					<p><strong>{{ hours.days }}:</strong> {{ hours.open }} - {{ hours.close }}</p>
+				{% endfor %}
+			</div>
+		</div>
+		<div class="contact-info-right">
+			<h2>Get In Touch</h2>
+			<form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xqkollpy" method="post">
+				<fieldset id="fs-frm-inputs">
+					<label for="full-name">Full Name</label>
+					<input type="text" name="name" id="full-name" placeholder="John Doe" required="">
+					<label for="email-address">Your Email Address</label>
+					<input type="email" name="_replyto" id="email-address" placeholder="example@example.com" required="">
+					<label for="message">Message</label>
+					<textarea rows="5" name="message" id="message" placeholder="Your message." required=""></textarea>
+					<input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+				</fieldset>
+				<input type="submit" value="Submit">
+			</form>
+		</div>
+	</div>
+</div>
+
+<style>
+	#contact-info-section {
+		background-color: #03AABC;
+		padding: 6rem 0;
+		margin: 0 calc(-50vw + 50%);
+		width: 100vw;
+	}
+
+	.contact-info-container {
+		max-width: 1100px;
+		margin: 0 auto;
+		padding: 0 2rem;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 4rem;
+		color: white;
+	}
+
+	.contact-info-left h2,
+	.contact-info-right h2 {
+		font-size: 2rem;
+		margin: 0 0 2rem;
+		color: white;
+	}
+
+	.contact-detail {
+		margin-bottom: 2rem;
+	}
+
+	.contact-detail h3 {
+		font-size: 1.2rem;
+		margin: 0 0 0.5rem;
+		color: white;
+		font-weight: 600;
+	}
+
+	.contact-detail p {
+		margin: 0.25rem 0;
+		font-size: 1rem;
+		line-height: 1.6;
+		color: white;
+	}
+
+	.contact-detail strong {
+		color: white;
+	}
+
+	.contact-detail a {
+		color: white;
+		text-decoration: none;
+	}
+
+	.contact-detail a:hover {
+		text-decoration: underline;
+	}
+
+	/* Form styling */
+	#fs-frm input,
+	#fs-frm select,
+	#fs-frm textarea,
+	#fs-frm fieldset,
+	#fs-frm optgroup,
+	#fs-frm label {
+		font-family: inherit;
+		font-size: 100%;
+		color: #333;
+		border: none;
+		border-radius: 0;
+		display: block;
+		width: 100%;
+		padding: 0;
+		margin: 0;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+	}
+
+	#fs-frm label {
+		font-size: .9rem;
+		margin-bottom: .5rem;
+		padding-top: .2rem;
+		color: white;
+		font-weight: 500;
+	}
+
+	#fs-frm input,
+	#fs-frm select,
+	#fs-frm textarea {
+		border: 1px solid rgba(255,255,255,0.3);
+		background-color: rgba(255,255,255,0.9);
+		padding: .75em 1rem;
+		margin-bottom: 1.5rem;
+		border-radius: 5px;
+	}
+
+	#fs-frm input:focus,
+	#fs-frm select:focus,
+	#fs-frm textarea:focus {
+		background-color: white;
+		outline-style: solid;
+		outline-width: 2px;
+		outline-color: rgba(255,255,255,0.5);
+		outline-offset: -1px;
+	}
+
+	#fs-frm [type="submit"] {
+		width: auto;
+		cursor: pointer;
+		background-color: white;
+		color: #03AABC;
+		font-weight: 600;
+		padding: 1rem 2.5rem;
+		border-radius: 999px;
+		transition: all 0.3s ease;
+		box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+	}
+
+	#fs-frm [type="submit"]:hover {
+		transform: scale(1.05);
+		box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+	}
+
+	#fs-frm fieldset {
+		border: none;
+		padding: 0;
+	}
+
+	@media (max-width: 768px) {
+		#contact-info-section {
+			padding: 4rem 0;
+		}
+
+		.contact-info-container {
+			grid-template-columns: 1fr;
+			gap: 3rem;
+			padding: 0 1.5rem;
+		}
+
+		.contact-info-left h2,
+		.contact-info-right h2 {
+			font-size: 1.5rem;
+		}
+	}
 </style>

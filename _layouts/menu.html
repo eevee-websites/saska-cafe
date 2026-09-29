@@ -131,3 +131,14 @@ layout: default
 {% if page.warning %}
 	<p id="warning">{{ page.warning }}</p>
 {% endif %}
+
+<style>
+	/* Saska-only: the shared cafe-theme opens menu photos to 200px on hover
+	   (#menu>div>div:hover>img), which crops these taller dish shots. Double it.
+	   The theme is left untouched so the other cafe sites are unaffected.
+	   `!important` is used deliberately: the theme rule has identical
+	   specificity, and this override must not depend on source order. */
+	#menu > div > div:hover > img {
+		max-height: 400px !important;
+	}
+</style>

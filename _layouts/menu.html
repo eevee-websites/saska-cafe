@@ -84,9 +84,9 @@ layout: default
 								{% endfor %}
 							</ul>
 						{% endif %}
-						{% if page.images %}
-							{% assign slugified_food_name = food.name | slugify %}
-							<img src="{{ '/assets/images/menu/' | append: slugified_food_name | append: '.webp' | relative_url }}" alt="{{ food.name }}">
+						{% if page.images and food.image %}
+							{% assign menu_image_path = '/assets/images/menu/' | append: food.image | append: '.webp' %}
+							<img src="{{ menu_image_path | relative_url }}" alt="{{ food.name }}" loading="lazy">
 						{% endif %}
 					</div>
 				{% endfor %}
